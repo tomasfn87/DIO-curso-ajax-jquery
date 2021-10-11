@@ -7,23 +7,44 @@
     Digital Innovation One - Introdução ao JavaScript - Utilizando Ajax e JQuery
   </title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <!-- <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'> -->
-  <script type="text/javaScript" src="js/jquery-3.6.0.min.js"></script>
-  <script type="text/javaScript" src="js/main.js"></script>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
 </head>
+
 <body>
-  <input id="cep"></input>
-  <button type="button" onclick="consultaCep()">Clique aqui</button>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand">Consulta CEP</a>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search"
+      placeholder="Digite o CEP" aria-label="Search" id="cep">
+      <button class="btn btn-outline-success" type="button" onclick="consultaCep()">
+        Buscar
+      </button>
+    </form>  
+  </nav>
+
+  <div class="resultado-busca">
     <p>
-        <p>
-            <span id="logradouro"></span>
-        </p>
-        <p>
-            <span id="bairro"></span>
-        </p>
-        <p>
-            <span id="localidade"></span><span id="uf"></span>
-        </p>
+      <p>
+        <span>Logradouro:</span>
+        <span id="logradouro"></span>
+      </p>
+      <p>
+        <span>Bairro:</span>
+        <span id="bairro"></span>
+      </p>
+      <p>
+        <span>Localidade:</span>
+        <span id="localidade"></span><span id="uf"></span>
+      </p>
     </p>
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
 </body>
 </html>
+    
