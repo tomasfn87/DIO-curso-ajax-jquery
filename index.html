@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>
-        Digital Innovation One - Introdução ao JavaScript - Utilizando Ajax e JQuery
-    </title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
-    <script type="text/javaScript" src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javaScript" src="js/main.js"></script>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>
+    Digital Innovation One - Introdução ao JavaScript - Utilizando Ajax e JQuery
+  </title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'> -->
+  <script type="text/javaScript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javaScript" src="js/main.js"></script>
 </head>
 <body>
-    <button type="button">
-        Clique aqui
-    </button>
+  <input id="cep"></input>
+  <button type="button" onclick="consultaCep()">Clique aqui</button>
+    <p>
+        <p>
+            <span id="logradouro"></span>
+        </p>
+        <p>
+            <span id="bairro"></span>
+        </p>
+        <p>
+            <span id="localidade"></span><span id="uf"></span>
+        </p>
+    </p>
 </body>
 </html>
