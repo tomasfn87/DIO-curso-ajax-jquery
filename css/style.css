@@ -1,17 +1,18 @@
 body {
-    background-color: rgb(34, 25, 95);
+    background-color: rgb(30, 27, 27);
     color: #ccc;
+    overflow-x: hidden;
 }
 
 nav {
-    padding: 0 0.8em;
+    padding: 0 0.5em 0 1.26em;
 }
 
 #cep {
     background-color: darkblue;
-    color: #eee;
+    color: orange;
 }
 
-.resultado-busca {
-    padding-left: 1.3em;
+#resultado-cep {
+    width: clamp(300px, 28.3em, 100vw);
 }
