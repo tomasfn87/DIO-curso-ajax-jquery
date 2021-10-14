@@ -12,6 +12,7 @@ function consultaCep() {
             $("#bairro").html(`${response.bairro}`)
             $("#localidade").html(`${response.localidade}/`)
             $("#uf").html(`${response.uf}`)
+            $(".cep").show()
             /* document.getElementById("logradouro").innerHTML = response.logradouro + ","
             document.getElementById("bairro").innerHTML = response.bairro + ","
             document.getElementById("localidade").innerHTML = response.localidade + "/"
@@ -20,3 +21,7 @@ function consultaCep() {
         }
     })
 } 
+
+$(function() {
+    $(".cep").hide()
+})
