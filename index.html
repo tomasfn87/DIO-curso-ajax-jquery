@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>
-    Digital Innovation One - Introdução ao JavaScript - Utilizando Ajax e JQuery
-  </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+      Digital Innovation One - Introdução ao JavaScript - Utilizando Ajax e JQuery
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Tem que ser nessa ordem, para que o meu .js rode por cima do jquery: {-->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script> 
+    <!-- } -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -23,15 +30,14 @@
       </button>
     </form>  
   </nav>
-
-  <div id="resultado-cep">
+    <div class="container-fluid cep" id="resultado-cep">
     <table class="table table-dark table-hover">
       <thead>
         <tr>
           <th scope="col">
             CEP:
           </th>
-          <th scope="col" id="numero-cep"></th>       
+          <th scope="col" id="numero-cep"></th> 
         </tr>
       </thead>
       <tbody>
@@ -56,12 +62,6 @@
       </tbody>
     </table>
   </div>
-
-  <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-
+  
 </body>
 </html>
-    
