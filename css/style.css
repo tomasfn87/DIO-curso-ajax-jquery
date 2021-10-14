@@ -1,18 +1,14 @@
 body {
-    background-color: rgb(30, 27, 27);
-    color: #ccc;
-    overflow-x: hidden;
+  background-color: rgb(30, 27, 27);
+  color: #ccc;
+  overflow-x: hidden;
 }
 
 nav {
-    padding: 0 0.5em 0 1.26em;
+  padding: 0 0.5em 0 1.26em;
 }
 
 #cep {
-    background-color: darkblue;
-    color: orange;
-}
-
-#resultado-cep {
-    width: clamp(300px, 28.3em, 100vw);
+  background-color: darkblue;
+  color: orange;
 }
